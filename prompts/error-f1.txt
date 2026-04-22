@@ -1,0 +1,13 @@
+Using the EXACT same cartoon wolf character from the attached reference image (tan/beige fur, cream chest, black nose, bold uniform outlines, 3/4 sitting pose, prominent fluffy tail, same cheek tufts, same ear shape):
+
+Generate a new "error / confused" scene:
+- REMOVE any "?" symbol that might be in the reference
+- Wolf stays in the SAME 3/4 sitting pose, SAME camera angle, both front paws naturally on the ground (maybe one paw slightly raised toward its own face in confusion)
+- Ears flopped back/down a little (worried expression)
+- Eyes: squinted in a worried "><" shape (closed tight as if flinching), NOT the normal round eyes
+- Mouth: small curved-down frown or slight grimace
+- Head tilted slightly, body leaning back a bit as if recoiling from something bad
+- Fluffy tail held low or curled defensively
+- A combined "!?" symbol floating above the head (approximately 30% of the wolf's head size). **Both the "!" and the "?" must be drawn with a SOLID WHITE INTERIOR FILL and a thin BLACK OUTLINE border** — bright white inside with clean dark edges, NOT solid black. Just the "!?" — no speech bubble.
+
+CRITICAL style preservation: character style, fur colors, cheek tufts, outline weight, overall cartoon aesthetic ALL identical to reference. Transparent or pure white background. Square composition.

@@ -1,0 +1,15 @@
+Using the attached F1 image as the CANONICAL frame, generate the next "sleeping" loop frame.
+
+MUST STAY IDENTICAL to F1 (freeze targets):
+- The wolf's curled lying-down pose, camera angle
+- Face: closed eyes, mouth, nose, whiskers
+- Character style: fur colors, outlines, line weight
+- Background
+
+CHANGE THESE ELEMENTS (frame 2 delta — "breathing in"):
+1. **Body**: very subtle expansion as if breathing in — the rib cage / chest area 2-4 pixels taller/rounder than F1
+2. **"Zzz" symbols**: shifted slightly upward (as if floating higher) and maybe a tiny bit rotated
+
+Only the chest expansion + Zzz float movement. Everything else pixel-identical to F1.
+
+Same canvas, same background.

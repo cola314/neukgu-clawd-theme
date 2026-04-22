@@ -63,12 +63,15 @@ Clawd는 외부 테마 SVG를 보안상 sanitize해서 `theme-cache/` 로 분리
 
 | 상태 | 트리거 | 애니 |
 |------|-------|------|
-| `idle` | 기본 | 정적 + 마우스 눈 추적 |
+| `idle` | 기본 | 정적 + 마우스 눈 추적 (SVG 하이브리드) |
 | `working` | PreToolUse (툴 실행) | 3프레임 타이핑 루프 |
 | `thinking` | UserPromptSubmit (프롬프트 입력) | 3프레임 꼬리 흔들기 + 흰 "?" |
 | `attention` | Stop (작업 완료) | 3프레임 cheer wave + 노란 스파클 |
-| `sleeping` | 절전 | idle 폴백 (TODO) |
-| `notification` / `error` | TODO | — |
+| `notification` | 권한 요청/알림 | 3프레임 귀 쫑긋 + 흰 "!" |
+| `error` | 툴 실패 | 3프레임 머리 흔들 + >< 눈 + 흰 "!?" |
+| `sleeping` | 절전 (1분 방치) | 3프레임 호흡 + 흰 "Zzz" |
+
+**7개 MVP 상태 전부 구현 완료** 🎉
 
 ## 🛠️ 커스터마이징 & 재생성
 
@@ -106,7 +109,7 @@ Clawd는 외부 테마 SVG를 보안상 sanitize해서 `theme-cache/` 로 분리
 
 ## 💸 만들 때 든 비용
 
-- AI 이미지 생성 (OpenRouter Nano Banana): **약 $0.52** (≈ 735원) — 13 프레임 × $0.04
+- AI 이미지 생성 (OpenRouter Nano Banana): **약 $1.32** (≈ 1,850원) — 33 프레임 × $0.04 (재시도/개선 포함)
 - 로컬 처리 (투명 배경, 정렬, APNG 합성, SVG 제작): $0
 
 ## 🐺 Made with 늑구 + Claude Code

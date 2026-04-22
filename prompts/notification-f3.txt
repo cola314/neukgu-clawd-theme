@@ -1,0 +1,14 @@
+Using the attached F1 image as the CANONICAL frame (not F2), generate another "notification" loop frame.
+
+MUST STAY IDENTICAL to F1:
+- Face, head position/tilt, body pose, paws, tail
+- Character style, colors, outlines
+- Camera, composition, background
+
+CHANGE THESE ELEMENTS (frame 3 delta):
+1. **"!" exclamation mark**: SMALLER (about 10% smaller than F1) and shifted slightly DOWNWARD — pulse contraction phase
+2. **Ears**: slightly different position from both F1 and F2 (subtle asymmetric flick)
+
+Only "!" size/position + ears micro-change. Everything else pixel-identical.
+
+The sequence F1 (baseline) → F2 (! big, shifted up) → F3 (! smaller, shifted down) creates a natural pulsing "!" effect suggesting an urgent notification.

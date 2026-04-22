@@ -1,0 +1,14 @@
+Using the attached F1 image as the CANONICAL frame, generate the next "notification" loop frame.
+
+MUST STAY IDENTICAL to F1 (do not redraw — these are freeze targets):
+- Face: eyes, pupils, mouth, nose, whiskers
+- Head: position, tilt
+- Body: sitting pose, chest, belly, paws, hind legs
+- Character style: fur colors, outlines, line weight, aesthetic
+- Camera angle, composition, background
+
+CHANGE THESE ELEMENTS (this is the delta for frame 2):
+1. **"!" exclamation mark**: SLIGHTLY larger (about 15% bigger) and shifted slightly upward by a few pixels — as if the "!" is pulsing bigger for emphasis
+2. **Ears**: still both perked up, but shifted slightly — e.g. one ear micro-twitches or a small position delta
+
+Everything else pixel-identical. Same canvas, same background.

@@ -1,0 +1,15 @@
+Using the attached F1 image as the CANONICAL frame (not F2), generate another "sleeping" loop frame.
+
+MUST STAY IDENTICAL to F1:
+- Curled lying-down pose, camera angle
+- Face: closed eyes, mouth, nose, whiskers
+- Character style: fur colors, outlines, line weight
+- Background
+
+CHANGE THESE ELEMENTS (frame 3 delta — "breathing out"):
+1. **Body**: very subtle contraction — rib cage / chest 1-2 pixels lower/flatter than F1 (slight exhale)
+2. **"Zzz" symbols**: shifted to DIFFERENT positions from F1 AND F2 — some drifted left, some right, one maybe fainter/smaller (as if a farther Zzz)
+
+The sequence F1 (rest) → F2 (breathe in, Zzz rise) → F3 (breathe out, Zzz drift) creates a gentle sleeping rhythm.
+
+Everything else pixel-identical to F1. Same canvas, same background.

@@ -52,10 +52,49 @@ def white_to_alpha_border(
     trapped_color: tuple[int, int, int] | None = None,
 ) -> Image.Image:
     """Only border-connected white gets alpha=0. Trapped whites preserved.
-    If trapped_color is given, recolor trapped-white pixels to that RGB."""
+    If trapped_color is given, recolor trapped-white pixels to that RGB.
+
+    If input image already has transparency (alpha channel with zeros),
+    return as-is to avoid corrupting Nano Banana outputs that were
+    delivered already-transparent.
+    """
     img = img.convert("RGBA")
-    r, g, b, _ = img.split()
-    rgb_min = ImageChops.darker(ImageChops.darker(r, g), b)
+    r, g, b, orig_alpha = img.split()
+    # Passthrough: input already has transparency (any alpha < 250 detected)
+    alpha_min, _ = orig_alpha.getextrema()
+    if alpha_min < 250:
+        return img
+
+    # Detect background color from corners to choose bg mode
+    rgb_min_full = ImageChops.darker(ImageChops.darker(r, g), b)
+    rgb_max_full = ImageChops.lighter(ImageChops.lighter(r, g), b)
+    w, h = img.size
+    corners = [(0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1)]
+    corner_max_vals = [rgb_max_full.getpixel(c) for c in corners]
+
+    if max(corner_max_vals) < 30:
+        # Dark/black opaque bg — flood-fill from border using rgb_max <= low threshold
+        candidate = rgb_max_full.point(lambda p: 255 if p < 30 else 0)
+        is_bg = candidate.copy()
+        seeds = [(0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1),
+                 (w // 2, 0), (w // 2, h - 1), (0, h // 2), (w - 1, h // 2)]
+        for pt in seeds:
+            try:
+                if is_bg.getpixel(pt) == 255:
+                    ImageDraw.floodfill(is_bg, pt, 128, thresh=0)
+            except Exception:
+                pass
+        final_alpha = is_bg.point(lambda p: 0 if p == 128 else 255)
+        if trapped_color is not None:
+            # Treat "trapped dark" (rgb_max small but not border-connected) as target color
+            trapped_mask = is_bg.point(lambda p: 255 if p == 255 else 0)
+            color_fill = Image.new("RGB", img.size, trapped_color)
+            rgb_img = Image.merge("RGB", (r, g, b))
+            tinted = Image.composite(color_fill, rgb_img, trapped_mask)
+            r, g, b = tinted.split()
+        return Image.merge("RGBA", (r, g, b, final_alpha))
+
+    rgb_min = rgb_min_full
 
     # Binary candidate: 255 if "near-white" (>= lo), else 0
     candidate = rgb_min.point(lambda p: 255 if p >= lo else 0)

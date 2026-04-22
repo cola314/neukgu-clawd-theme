@@ -1,0 +1,13 @@
+Using the EXACT same cartoon wolf character from the attached reference image (tan/beige fur, cream chest, black nose, bold uniform outlines, prominent fluffy tail, same cheek tufts, same ear shape, same whiskers):
+
+Generate a new "sleeping" scene:
+- CHANGE POSE: the wolf is now LYING DOWN curled up on its side, peacefully asleep (not sitting anymore)
+- Curled in a gentle C-shape or comma shape, tail wrapped around the body or tucked near the face
+- Head resting on the front paws (or on the ground), body lying on its side
+- Eyes CLOSED (small curved line "▂" or upside-down U shape) — peaceful sleep expression
+- Mouth small closed or slightly open in soft sleep-breath
+- Ears relaxed, slightly folded back
+- View: slightly from above or side-on, character fills the frame comfortably
+- Three "Zzz" letters floating above the head, gently diagonally ascending (smaller z, medium z, larger Z). **Each letter must be drawn with a SOLID WHITE INTERIOR FILL and a thin BLACK OUTLINE border** — like outlined block letters, bright white inside with clean dark edges, NOT solid black. The Zzz should look bright white with a black edge.
+
+CRITICAL style preservation: fur colors, cream chest, outline weight, cheek tufts, ear shape, nose shape, whisker style ALL identical to reference. The character must be IMMEDIATELY RECOGNIZABLE as the same wolf — just in a different pose (lying down). Transparent or pure white background. Square composition.

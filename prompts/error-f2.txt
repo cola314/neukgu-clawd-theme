@@ -1,0 +1,15 @@
+Using the attached F1 image as the CANONICAL frame, generate the next "error" loop frame.
+
+MUST STAY IDENTICAL to F1 (do not redraw — these are freeze targets):
+- **"!?" symbol**: EXACT same position, size, rotation as F1 — PIXEL-IDENTICAL, do NOT move it at all
+- **Eyes**: exact squinted ">< " shape from F1 — PIXEL-IDENTICAL, do not open or close them
+- Face: mouth, nose, whiskers (PIXEL-IDENTICAL)
+- Body: sitting pose, both paws, chest, belly, tail curl (PIXEL-IDENTICAL)
+- Character style: fur colors, outlines, line weight
+- Camera angle, composition, background
+
+CHANGE ONLY THIS ONE THING (frame 2 delta):
+- **Head tilt**: tilted slightly to one side by about 5 degrees (subtle, like a small head-shake motion). Only the HEAD rotates slightly — the body, "!?" symbol, tail, paws all stay exactly where they were in F1.
+
+The wolf looks like it's shaking its head slightly in frustration — but symbols, eyes, and body are frozen.
+Same canvas, same background.

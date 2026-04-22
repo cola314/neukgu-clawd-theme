@@ -34,12 +34,14 @@
   },
 
   "states": {
-    "idle":      ["idle-follow.svg"],
-    "working":   ["typing.apng"],
-    "thinking":  ["thinking.apng"],
-    "attention": ["happy.apng"],
-    "sleeping":  ["idle.png"],
-    "waking":    ["idle.png"]
+    "idle":         ["idle-follow.svg"],
+    "working":      ["typing.apng"],
+    "thinking":     ["thinking.apng"],
+    "attention":    ["happy.apng"],
+    "notification": ["notification.apng"],
+    "error":        ["error.apng"],
+    "sleeping":     ["sleeping.apng"],
+    "waking":       ["idle.png"]
   },
 
   "timings": {

@@ -1,0 +1,12 @@
+Using the EXACT same cartoon wolf character from the attached reference image (tan/beige fur, cream chest, black nose, bold uniform outlines, 3/4 sitting pose, prominent fluffy tail, same cheek tufts, same ear shape, same eye style):
+
+Generate a new "notification / alert" scene:
+- REMOVE any "?" symbol that might be in the reference
+- Wolf stays in the SAME 3/4 sitting pose, SAME camera angle, both front paws naturally resting on the ground
+- Ears VERY PERKED UP — both ears standing straight up, fully alert attention
+- Head slightly lifted, eyes wide open looking up-and-to-the-right toward the exclamation mark
+- Mouth small "o" shape — slight surprise or attention
+- Fluffy tail held up naturally
+- A SINGLE large "!" exclamation mark floating in the air above and to the right of the head. **The "!" must be drawn with a SOLID WHITE INTERIOR FILL and a thin BLACK OUTLINE border** — like a classic comic-book alert symbol, bright white inside with a clean black edge. The "!" should be clearly white-on-outline, NOT solid black. Approximately 30% the size of the wolf's head. Just the "!" — no other symbols, no speech bubble.
+
+CRITICAL style preservation: character style, fur colors, cheek tufts, outline weight, eye shape ALL identical to reference. Transparent or pure white background. Square composition.

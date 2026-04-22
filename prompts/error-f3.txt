@@ -1,0 +1,15 @@
+Using the attached F1 image as the CANONICAL frame (not F2), generate another "error" loop frame.
+
+MUST STAY IDENTICAL to F1:
+- **"!?" symbol**: EXACT same position, size, rotation as F1 — PIXEL-IDENTICAL
+- **Eyes**: exact squinted ">< " shape from F1 — PIXEL-IDENTICAL
+- Face, body, paws, tail: PIXEL-IDENTICAL
+- Character style, camera, composition, background
+
+CHANGE ONLY THIS ONE THING (frame 3 delta):
+- **Head tilt**: tilted about 5 degrees to the OPPOSITE side from F2. Only the head rotates a tiny bit — everything else stays exactly as in F1.
+
+The sequence F1 (center) → F2 (tilt one way) → F3 (tilt other way) creates a head-shake loop.
+"!?" symbol is anchored in absolute pixel position and never moves. Eyes stay squinted the whole loop.
+
+Same canvas, same background.
