@@ -10,7 +10,7 @@ Idle 상태에 마우스 눈 추적 지원. Typing / Thinking / Happy 애니 포
 |:---:|:---:|:---:|:---:|
 | ![idle](assets/idle.png) | ![thinking](assets/thinking.apng) | ![working](assets/typing.apng) | ![happy](assets/happy.apng) |
 
-> **Note**: GitHub은 APNG 애니메이션을 첫 프레임만 보여줍니다. 실제 움직이는 모습은 설치 후 Clawd 데스크펫에서 확인하세요.
+> 이미지 클릭하면 전체 해상도로 볼 수 있어요. 눈 추적(idle)은 실제 데스크펫에서만 동작합니다.
 
 ## 📦 설치
 
