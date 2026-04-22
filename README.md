@@ -12,44 +12,52 @@ Idle 상태에 마우스 눈 추적 지원. Typing / Thinking / Happy 애니 포
 
 ## 📦 설치
 
-### 방법 1 — git clone
+### 🚀 Quick install (추천)
 
 ```bash
-# Windows (PowerShell / Git Bash)
-git clone https://github.com/cola314/neukgu-clawd-theme \
-  "$APPDATA/clawd-on-desk/themes/neukgu"
-
-# macOS
-git clone https://github.com/cola314/neukgu-clawd-theme \
-  "$HOME/Library/Application Support/clawd-on-desk/themes/neukgu"
-
-# Linux
-git clone https://github.com/cola314/neukgu-clawd-theme \
-  "$HOME/.config/clawd-on-desk/themes/neukgu"
+git clone https://github.com/cola314/neukgu-clawd-theme
+cd neukgu-clawd-theme
 ```
 
-### 방법 2 — ZIP 다운로드
+**Windows (PowerShell)**:
+```powershell
+./install.ps1
+```
 
-1. 이 리포에서 `Code → Download ZIP`
-2. 압축 해제 후 폴더명을 `neukgu`로 변경
-3. Clawd의 `userData/themes/` 하위로 복사 (위 경로 참조)
+**macOS / Linux (bash)**:
+```bash
+chmod +x install.sh && ./install.sh
+```
 
-### ⚠️ PNG 참조 이슈 우회
+그 다음:
+1. Clawd on Desk 재시작 (트레이에서 Quit → 다시 실행)
+2. 우클릭 → **Theme** → **늑구 (Neukgu)** 선택
 
-Clawd는 외부 테마의 SVG만 `theme-cache` 로 복사하고 PNG는 원본 dir에 두기 때문에, SVG의 `<image href="idle-eyeless.png">` 상대 경로가 깨집니다. 설치 후 **한 번 수동으로 PNG를 cache에도 복사**해주세요:
+### 수동 설치
+
+스크립트 안 쓸 경우:
 
 ```bash
 # Windows
-cp "$APPDATA/clawd-on-desk/themes/neukgu/assets/idle-eyeless.png" \
-   "$APPDATA/clawd-on-desk/theme-cache/neukgu/assets/"
+cp -r * "$APPDATA/clawd-on-desk/themes/neukgu/"
+# PNG 참조 우회 (아래 기술적 메모 참조)
+mkdir -p "$APPDATA/clawd-on-desk/theme-cache/neukgu/assets"
+cp assets/idle-eyeless.png "$APPDATA/clawd-on-desk/theme-cache/neukgu/assets/"
+
+# macOS
+cp -r * "$HOME/Library/Application Support/clawd-on-desk/themes/neukgu/"
+mkdir -p "$HOME/Library/Application Support/clawd-on-desk/theme-cache/neukgu/assets"
+cp assets/idle-eyeless.png "$HOME/Library/Application Support/clawd-on-desk/theme-cache/neukgu/assets/"
+
+# Linux
+cp -r * "$HOME/.config/clawd-on-desk/themes/neukgu/"
+mkdir -p "$HOME/.config/clawd-on-desk/theme-cache/neukgu/assets"
+cp assets/idle-eyeless.png "$HOME/.config/clawd-on-desk/theme-cache/neukgu/assets/"
 ```
 
-(Clawd 본체가 비-SVG 자산도 캐시 복사하도록 업데이트되면 이 단계는 필요 없어집니다.)
+### ℹ️ PNG cache 복사가 왜 필요한가?
 
-## 🎮 테마 활성화
-
-1. Clawd 재시작
-2. 우클릭 → **Theme** → **늑구 (Neukgu)** 선택
+Clawd는 외부 테마 SVG를 보안상 sanitize해서 `theme-cache/` 로 분리하지만, 비-SVG 자산(PNG, APNG)은 원본 dir에 그대로 둡니다. idle-follow.svg의 `<image href="idle-eyeless.png">` 상대 경로가 cache dir 기준으로 resolve되어 PNG를 못 찾는 이슈가 있어, 설치 스크립트가 PNG도 cache로 복사해 우회합니다. 자세한 기술 배경은 [NOTES.md](NOTES.md) 참조.
 
 ## 🎨 상태 매핑
 
