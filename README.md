@@ -10,8 +10,6 @@ Idle 상태에 마우스 눈 추적 지원. Typing / Thinking / Happy 애니 포
 |:---:|:---:|:---:|:---:|
 | ![idle](assets/idle.png) | ![thinking](assets/thinking.apng) | ![working](assets/typing.apng) | ![happy](assets/happy.apng) |
 
-> 이미지 클릭하면 전체 해상도로 볼 수 있어요. 눈 추적(idle)은 실제 데스크펫에서만 동작합니다.
-
 ## 📦 설치
 
 ### 방법 1 — git clone
