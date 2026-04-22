@@ -1,0 +1,16 @@
+Using the attached F1 image as the CANONICAL frame, generate another thinking loop frame (the opposite swing of F2).
+
+FREEZE these elements completely (PIXEL-IDENTICAL to F1):
+- Body (torso, paws, head position, neck)
+- Face: eyes, mouth, whiskers, nose, outlines
+- The "?" symbol (position, size, shape — do not move it)
+- Background, camera angle, composition, art style
+- Fur colors, line weight, all design details
+
+ONLY THESE TWO ELEMENTS MAY CHANGE:
+1. **Tail** — gently swayed to a slightly different position than F1 — not a big change, just a subtle sway like a slow wag mid-arc. Same fluffiness, same color, same outline
+2. **Ears** — MIRRORED asymmetry: the OPPOSITE ear tilts back compared to F2. If F2 had the left ear tilted back and right ear perked, F3 has the right ear tilted back and left ear perked. Just a small flick
+
+Think of it as another snapshot of a "paused wolf whose tail and ears micro-moved." Everything except tail + ears is identical to F1. The three frames (F1, F2, F3) should feel like a natural tail-wag + ear-flick loop when played in sequence.
+
+Same background (transparent or pure white), same composition, same canvas size.

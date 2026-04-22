@@ -1,0 +1,15 @@
+Using the EXACT same cartoon wolf character from the attached reference image (tan/beige fur, cream chest, black nose, bold uniform outlines, 3/4 sitting pose, same cheek tufts, same ear shape, same eye style):
+
+Generate a new "thinking" scene:
+- REMOVE the laptop entirely (no objects in front of the wolf)
+- The wolf stays in the SAME 3/4 sitting pose, SAME camera angle
+- Both front paws naturally on the ground in front (NOT on any keyboard). Simple resting paw position
+- Head tilted UP-and-slightly-to-one-side, eyes looking upward at the question mark
+- Ears perked up attentively
+- Mouth: small closed neutral curious expression
+- **A PROMINENT FLUFFY TAIL** clearly visible, curled naturally behind/beside the body. The tail should be large and expressive (like a fox/shiba/wolf tail) — big enough to be noticeable as a distinct feature. Same tan color and bold outline style as the body. Make the tail clearly animatable — its shape and position should be obvious
+- A SINGLE bold black "?" symbol floating in the air above and to the right of the wolf's head (approximately 30% the size of the wolf's head). Same bold cartoon outline style as the wolf's linework. No thought bubble — just the "?" floating freely
+
+Compose the wolf LARGER in the frame than before — the wolf and tail together should fill most of the square canvas with only modest margins. The "?" sits above-right.
+
+CRITICAL: character style, fur colors, cheek tufts, outline weight, eye style ALL identical to reference. Transparent or pure white background. Square composition.

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 200 200" width="200" height="200"
+     preserveAspectRatio="xMidYMid meet">
+
+  <!-- Ground shadow -->
+  <g id="shadow-js">
+    <ellipse cx="100" cy="183" rx="39" ry="3.6" fill="#000" opacity="0.18" />
+  </g>
+
+  <!-- Body: wolf PNG rendered at 80% of viewBox (160x160 centered at 100,100).
+       Bottom of image at y=180. -->
+  <g id="body-js">
+    <image href="idle-eyeless.png" x="20" y="20" width="160" height="160"
+           preserveAspectRatio="xMidYMid meet" />
+  </g>
+
+  <!-- Eye overlays at 80%-scaled PNG
+       PNG eye pixels (766, 385) and (897, 385) in 1254 canvas
+       x_L = 20 + 0.611 * 160 = 117.7,  x_R = 20 + 0.715 * 160 = 134.4
+       y   = 20 + 0.307 * 160 = 69.1 -->
+  <g id="eyes-js">
+    <ellipse cx="117.7" cy="69.1" rx="2.15" ry="2.9" fill="#101010" />
+    <ellipse cx="134.4" cy="69.1" rx="2.15" ry="2.9" fill="#101010" />
+  </g>
+
+</svg>

@@ -1,0 +1,15 @@
+Using the attached F1 image as the CANONICAL frame, generate the next "cheer wave" frame.
+
+MUST STAY IDENTICAL to F1 (do not redraw — these are the freeze targets):
+- Face: eyes (both), pupils with star highlights, mouth, tongue, nose, whiskers
+- Head: position, size, tilt, ear shape and overall ear position
+- Body: sitting pose, chest, belly, back, shoulders, fur pattern, hind legs
+- Character style: tan/cream colors, bold black outlines, line weight, overall aesthetic
+- Camera angle, composition, canvas size, background (transparent/white)
+
+CHANGE THESE ELEMENTS (this is the delta for frame 2):
+1. **Both front paws**: angled OUTWARD to form a WIDER "V" shape — each paw points diagonally outward/up instead of straight up. Same paw shape and same overall height, just tilted outward about 15-20 degrees. Imagine the wolf spreading its arms wide in celebration
+2. **Tail**: curled in a slightly different direction than F1 (subtle wag) — same fluffiness, just different curl angle
+3. **Sparkles**: shuffled to DIFFERENT positions from F1, same count (7-8) and same variety (4-point stars, diamonds, small crosses), some slightly rotated/resized. White interiors (we post-process to yellow)
+
+This is a cheering "arms wide" pose variation. Same canvas, same background.

@@ -1,0 +1,13 @@
+Using the EXACT same character from the attached reference image — a cartoon wolf with tan/beige fur, cream-colored chest and belly, black nose, small round black eyes, pointed tan ears with darker tan inner fur, fluffy cheek tufts, bold uniform black outlines, simple flat vector style with very subtle shading.
+
+Generate a NEW scene with the SAME wolf:
+- The wolf is now sitting upright (back legs folded under), facing the camera at a 3/4 angle with its body turned slightly to the right
+- In front of the wolf on the ground is a small laptop, open, screen facing the wolf
+- BOTH front paws are hovering just ABOVE the laptop keyboard, not yet touching any keys, in a ready-to-type position
+- Head tilted slightly downward, looking at the laptop screen
+- Mouth closed, focused concentrated expression
+- Tail curled naturally to one side
+
+CRITICAL style preservation: Keep the line weight, fur color, cream chest patch, ear shape, eye style, nose shape, and overall cuteness IDENTICAL to the reference image. Same cartoon aesthetic, same outline thickness.
+
+Background: pure white or transparent. Square composition centered on the wolf + laptop.

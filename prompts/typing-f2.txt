@@ -1,0 +1,13 @@
+Think of this as traditional frame-by-frame animation. The attached reference is the CANONICAL frame. I need the NEXT typing loop frame.
+
+FREEZE THE FACE: The head, face, eyes, mouth, ears, and expression must be PIXEL-IDENTICAL to the reference. Do NOT redraw the face. Both eyes must be at the exact same position and shape. Mouth must be at the exact same position, shape, and size. Ear angles identical. Head tilt identical. Expression identical.
+
+FREEZE THE BODY: Body pose, sitting angle, camera angle, laptop position, background, lighting, color palette, line weight, and tail all stay IDENTICAL to the reference.
+
+ONLY ANIMATE THE PAWS:
+- LEFT front paw is pressing DOWN on a laptop key (paw clearly touching the keyboard, finger-tips down)
+- RIGHT front paw is RAISED clearly above the keyboard (a few pixels higher than in the reference), ready to strike next
+
+This is a small paw-only delta. Imagine taking the reference image and only repainting the paw area — everything else is copy-paste identical.
+
+Output: same composition, same size, same background color (white/transparent) as the reference.

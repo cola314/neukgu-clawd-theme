@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "name": "늑구 (Neukgu)",
+  "author": "yoobyungjo",
+  "version": "0.1.0",
+  "description": "A cute cartoon wolf desk pet — AI-generated via Nano Banana",
+  "license": "MIT",
+
+  "viewBox": { "x": 0, "y": 0, "width": 200, "height": 200 },
+
+  "layout": {
+    "contentBox": { "x": 20, "y": 20, "width": 160, "height": 160 },
+    "centerX": 100,
+    "baselineY": 180,
+    "visibleHeightRatio": 0.8,
+    "baselineBottomRatio": 0.05
+  },
+
+  "eyeTracking": {
+    "enabled": true,
+    "states": ["idle"],
+    "eyeRatioX": 0.5,
+    "eyeRatioY": 0.5,
+    "maxOffset": 2.0,
+    "bodyScale": 0.2,
+    "shadowStretch": 0.15,
+    "shadowShift": 0.3,
+    "ids": {
+      "eyes": "eyes-js",
+      "body": "body-js",
+      "shadow": "shadow-js"
+    },
+    "shadowOrigin": "100px 176px"
+  },
+
+  "states": {
+    "idle":      ["idle-follow.svg"],
+    "working":   ["typing.apng"],
+    "thinking":  ["thinking.apng"],
+    "attention": ["happy.apng"],
+    "sleeping":  ["idle.png"],
+    "waking":    ["idle.png"]
+  },
+
+  "timings": {
+    "mouseIdleTimeout": 20000,
+    "mouseSleepTimeout": 60000
+  },
+
+  "sleepSequence": { "mode": "direct" },
+
+  "hitBoxes": {
+    "default": { "x": 30, "y": 30, "w": 140, "h": 150 }
+  },
+
+  "miniMode": {
+    "supported": false
+  },
+
+  "objectScale": {
+    "widthRatio": 0.7,
+    "heightRatio": 0.7,
+    "offsetX": 0,
+    "offsetY": 0
+  }
+}

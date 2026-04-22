@@ -1,0 +1,30 @@
+# Development artifacts - never commit
+*.bak
+*-v1.png
+*-v2.png
+*-test.png
+*-yellow.png
+assets/aligned/
+preview.html
+.cache-meta.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment / secrets
+.env
+.env.local
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# OpenRouter API key should NEVER be committed
+# (gen-frame.py reads from OPENROUTER_API_KEY env var)

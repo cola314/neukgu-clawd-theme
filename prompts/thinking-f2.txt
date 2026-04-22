@@ -1,0 +1,16 @@
+Using the attached F1 image as the CANONICAL frame, generate the next thinking loop frame.
+
+FREEZE these elements completely (PIXEL-IDENTICAL to F1):
+- Body (torso, paws, head position, neck)
+- Face: eyes, mouth, whiskers, nose, outlines
+- The "?" symbol (position, size, shape — do not move it)
+- Background, camera angle, composition, art style
+- Fur colors, line weight, all design details
+
+ONLY THESE TWO ELEMENTS MAY CHANGE:
+1. **Tail** — gently swayed to the opposite curl direction. If F1 tail curls to the right, F2 tail curls slightly left (or vice versa). Small delta, like a wag. Same fluffiness, same color, same outline
+2. **Ears** — slight flick: one ear tilts back a little while the other stays perked (asymmetric ear position, whereas F1 had both perked symmetrically)
+
+Think of it as a "paused wolf whose tail and ears just moved for a moment." Nothing else in the image changes. The wolf is frozen except for tail wag + ear flick.
+
+Same background (transparent or pure white), same composition, same canvas size.
