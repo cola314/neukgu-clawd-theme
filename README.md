@@ -6,9 +6,13 @@ Idle 상태에 마우스 눈 추적 지원. Typing / Thinking / Happy 애니 포
 
 ## 🎬 미리보기
 
-| idle (eye tracking) | thinking 🤔 | working 💻 | happy ✨ |
+| idle 👀 | thinking 🤔 | working 💻 | happy ✨ |
 |:---:|:---:|:---:|:---:|
 | ![idle](assets/idle.png) | ![thinking](assets/thinking.apng) | ![working](assets/typing.apng) | ![happy](assets/happy.apng) |
+
+| notification ⚡ | error 😵 | sleeping 💤 |
+|:---:|:---:|:---:|
+| ![notification](assets/notification.apng) | ![error](assets/error.apng) | ![sleeping](assets/sleeping.apng) |
 
 ## 📦 설치
 
