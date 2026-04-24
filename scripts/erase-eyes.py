@@ -7,18 +7,22 @@ revealing the PNG's original fixed eyes underneath.
 from __future__ import annotations
 import sys
 import pathlib
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image
 
 
 # Eye pixel coords in idle.png (1254x1254), found via find-eyes.py
 LEFT_EYE_CENTER = (766, 385)
 RIGHT_EYE_CENTER = (897, 385)
-# Fill radius slightly larger than detected eye (~15x20)
-FILL_RX = 22
-FILL_RY = 28
+# Measured eye bbox: 30x41 (half = 15x20.5).
+# Ellipse math: corners of the eye bbox must satisfy (dx/rx)^2 + (dy/ry)^2 <= 1
+# so rx/ry need enough margin to cover the corners, not just the half-width/height.
+FILL_RX = 24
+FILL_RY = 30
 
-# Sample points for fur color (tan regions near but not touching eyes)
-SAMPLES = [(720, 400), (820, 360), (940, 400), (860, 350)]
+# Sample points for fur color — ALL inside the LIGHT cream mask around the
+# cheeks (NOT the darker head tan between eyes, NOT the black nose/mouth below).
+# Eyes are at y=385 on 1254 canvas; cream mask expected ~(231, 203, 166).
+SAMPLES = [(700, 430), (750, 420), (910, 420), (960, 430)]
 
 
 def sample_fur(img: Image.Image) -> tuple[int, int, int]:
@@ -41,20 +45,15 @@ def main(src: str, dst: str) -> None:
     fur = sample_fur(img)
     print(f"Sampled fur color: {fur}")
 
-    # Create an "eraser" layer: filled ellipses in fur color at eye positions
-    eraser = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(eraser)
+    # Paste a solid-fur-color rectangle directly onto the image — avoids any
+    # ImageDraw.rectangle outline quirks and avoids GaussianBlur edge artifacts
+    # that produce semi-transparent rings revealing the black eye underneath.
+    result = img.copy()
+    patch_w = FILL_RX * 2 + 1
+    patch_h = FILL_RY * 2 + 1
+    patch = Image.new("RGBA", (patch_w, patch_h), fur + (255,))
     for cx, cy in (LEFT_EYE_CENTER, RIGHT_EYE_CENTER):
-        draw.ellipse(
-            (cx - FILL_RX, cy - FILL_RY, cx + FILL_RX, cy + FILL_RY),
-            fill=fur + (255,),
-        )
-
-    # Slight blur on the eraser so the painted patch blends with surrounding fur
-    eraser = eraser.filter(ImageFilter.GaussianBlur(radius=2))
-
-    # Composite eraser OVER the original image
-    result = Image.alpha_composite(img, eraser)
+        result.paste(patch, (cx - FILL_RX, cy - FILL_RY))
     result.save(dst, "PNG")
     print(f"Saved: {dst}")
 
